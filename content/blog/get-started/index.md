@@ -80,26 +80,26 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
 [Choose a stunning **theme** and **font**](https://docs.hugoblox.com/getting-started/customize/) for your site. Themes are fully customizable.
 
 ## Time
-<section class="relative my-12">
-  <!-- 中间时间线 -->
+<section class="relative my-20 py-10">
+  <!-- ✅ 中轴线：必须撑满整个容器 -->
   <div class="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-1 bg-gray-300"></div>
 
   <!-- 时间点：出生 -->
   <div class="mb-12 flex justify-between items-center w-full">
     <div class="w-5/12 text-right pr-6">
-      <h3 class="text-xl font-semibold">出生</h3>
+      <h3 class="text-xl font-bold">出生</h3>
       <p class="text-sm text-gray-500">1990-01-01</p>
     </div>
-    <div class="bg-black text-white text-sm rounded-full px-3 py-1">0岁</div>
+    <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">0岁</div>
     <div class="w-5/12"></div>
   </div>
 
   <!-- 时间点：考入大学 -->
   <div class="mb-12 flex justify-between items-center w-full">
     <div class="w-5/12"></div>
-    <div class="bg-black text-white text-sm rounded-full px-3 py-1">18岁</div>
+    <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">18岁</div>
     <div class="w-5/12 pl-6">
-      <h3 class="text-xl font-semibold">考入安徽大学</h3>
+      <h3 class="text-xl font-bold">考入安徽大学</h3>
       <p class="text-sm text-gray-500">2008-03-14</p>
     </div>
   </div>
@@ -107,21 +107,20 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
   <!-- 时间点：加入科大讯飞 -->
   <div class="mb-12 flex justify-between items-center w-full">
     <div class="w-5/12 text-right pr-6">
-      <h3 class="text-xl font-semibold">加入科大讯飞</h3>
+      <h3 class="text-xl font-bold">加入科大讯飞</h3>
       <p class="text-sm text-gray-500">2012-03-14</p>
     </div>
-    <div class="bg-black text-white text-sm rounded-full px-3 py-1">22岁</div>
+    <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">22岁</div>
     <div class="w-5/12"></div>
   </div>
 
   <!-- 时间点：加入字节跳动 -->
   <div class="mb-12 flex justify-between items-center w-full">
     <div class="w-5/12"></div>
-    <div class="bg-black text-white text-sm rounded-full px-3 py-1">24岁</div>
+    <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">24岁</div>
     <div class="w-5/12 pl-6">
-      <h3 class="text-xl font-semibold">加入字节跳动</h3>
+      <h3 class="text-xl font-bold">加入字节跳动</h3>
       <p class="text-sm text-gray-500">2014-03-14</p>
     </div>
   </div>
 </section>
-
