@@ -112,4 +112,10 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
     <h4>2001</h4>
     <p>张一鸣考入南开大学微电子和软件工程专业。</p>
   </div>
+
+  <div style="position: relative; margin-bottom: 30px;">
+    <div style="position: absolute; left: -25px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: #ccc;"></div>
+    <h4>2012-03-14</h4>
+    <p>momo加入科大讯飞</p>
+  </div>
 </div>
