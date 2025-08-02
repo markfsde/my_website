@@ -84,7 +84,7 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="width: 20%; display: flex; justify-content: flex-start;margin-left: -15px;">
+  <div id="heartContainer" style="width: 20%; display: flex; justify-content: flex-start;margin-left: -20px;">
     <canvas id="heartCanvas" width="40" height="40" style="border: none;"></canvas>
   </div>
 
