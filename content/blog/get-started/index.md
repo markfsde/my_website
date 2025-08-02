@@ -45,6 +45,7 @@ Welcome 👋
 As a token of appreciation for sponsoring, you can **unlock [these](https://hugoblox.com/sponsor/) awesome rewards and extra features 🦄✨**
 
 
+
 ## Inspiration
 
 [Learn what other **creators**](https://hugoblox.com/creators/) are building with this template.
@@ -77,17 +78,17 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
 
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <div style="width: 48%;">
+  <div style="width: 40%;">
     <h3>主人也就是本人</h3>
     <p>生于2004年</p>
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="position: absolute; left: 45%; transform: translateX(-50%);">
+  <div id="heartContainer" style="width: 4%; display: flex; justify-content: center;">
     <canvas id="heartCanvas" width="40" height="40" style="border: none;"></canvas>
   </div>
 
-  <div style="width: 48%;">
+  <div style="width: 40%;">
     <h3>小狗</h3>
     <p>生于2005年</p>
   </div>
