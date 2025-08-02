@@ -78,17 +78,17 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
 
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <div style="width: 40%;">
+  <div style="width: 35%;">
     <h3>主人也就是本人</h3>
     <p>生于2004年</p>
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="width: 20%; display: flex; justify-content: flex-start;margin-left: -20px;">
+  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start;margin-left: -20px;">
     <canvas id="heartCanvas" width="40" height="40" style="border: none;"></canvas>
   </div>
 
-  <div style="width: 40%;">
+  <div style="width: 35%;">
     <h3>小狗</h3>
     <p>生于2005年</p>
   </div>
