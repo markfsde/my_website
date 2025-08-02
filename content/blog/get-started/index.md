@@ -99,19 +99,6 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
       <div class="text-sm text-gray-500">2008-03-14</div>
     </div>
 
-    <!-- 时间点 3 -->
-    <div class="flex flex-col items-center z-10 min-w-[140px]">
-      <div class="bg-black text-white text-xs rounded-full px-3 py-1 mb-2">22岁</div>
-      <div class="text-center font-bold">加入科大讯飞</div>
-      <div class="text-sm text-gray-500">2012-03-14</div>
-    </div>
-
-    <!-- 时间点 4 -->
-    <div class="flex flex-col items-center z-10 min-w-[140px]">
-      <div class="bg-black text-white text-xs rounded-full px-3 py-1 mb-2">24岁</div>
-      <div class="text-center font-bold">加入字节跳动</div>
-      <div class="text-sm text-gray-500">2014-03-14</div>
-    </div>
+    <!-- 继续添加... -->
   </div>
 </section>
-
