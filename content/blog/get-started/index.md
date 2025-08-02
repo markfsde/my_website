@@ -1,7 +1,7 @@
 ---
-title: 🎉 Easily create your own simple yet highly customizable blog
-summary: Take full control of your personal brand and privacy by migrating away from the big tech platforms!
-date: 2023-10-27
+title: 💟 Love blog with me and my bf
+summary: 走很远的路 和你
+date: 2025-08-02
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
