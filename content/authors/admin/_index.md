@@ -3,15 +3,15 @@
 title: zyy
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: 珠小姐
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: yy
+last_name: z
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 😈
 
 # Is this the primary user of the site?
 superuser: true
@@ -22,10 +22,10 @@ role: 两脚兽/智人
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Zhejiang University
-    url: 
+    url: https://www.zju.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include petting my dog and eating well.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
