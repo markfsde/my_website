@@ -80,12 +80,12 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
 [Choose a stunning **theme** and **font**](https://docs.hugoblox.com/getting-started/customize/) for your site. Themes are fully customizable.
 
 ## Time
-<section class="relative my-20 py-20 min-h-[800px]">
-  <!-- ✅ 中轴线 -->
-  <div class="absolute left-1/2 top-0 transform -translate-x-1/2 w-1 h-full bg-gray-300"></div>
+<section class="relative my-20 py-20">
+  <!-- ✅ 改为固定高度撑开线条 -->
+  <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-gray-300" style="height: 100%; min-height: 1000px;"></div>
 
-  <!-- 时间点：出生 -->
-  <div class="mb-12 flex justify-between items-center w-full">
+  <!-- 时间点 1 -->
+  <div class="flex items-center justify-between w-full mb-16">
     <div class="w-5/12 text-right pr-6">
       <h3 class="text-xl font-bold">出生</h3>
       <p class="text-sm text-gray-500">1990-01-01</p>
@@ -94,8 +94,8 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
     <div class="w-5/12"></div>
   </div>
 
-  <!-- 时间点：考入安徽大学 -->
-  <div class="mb-12 flex justify-between items-center w-full">
+  <!-- 时间点 2 -->
+  <div class="flex items-center justify-between w-full mb-16">
     <div class="w-5/12"></div>
     <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">18岁</div>
     <div class="w-5/12 pl-6">
@@ -104,8 +104,8 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
     </div>
   </div>
 
-  <!-- 时间点：加入科大讯飞 -->
-  <div class="mb-12 flex justify-between items-center w-full">
+  <!-- 时间点 3 -->
+  <div class="flex items-center justify-between w-full mb-16">
     <div class="w-5/12 text-right pr-6">
       <h3 class="text-xl font-bold">加入科大讯飞</h3>
       <p class="text-sm text-gray-500">2012-03-14</p>
@@ -114,8 +114,8 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
     <div class="w-5/12"></div>
   </div>
 
-  <!-- 时间点：加入字节跳动 -->
-  <div class="mb-12 flex justify-between items-center w-full">
+  <!-- 时间点 4 -->
+  <div class="flex items-center justify-between w-full mb-16">
     <div class="w-5/12"></div>
     <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">24岁</div>
     <div class="w-5/12 pl-6">
