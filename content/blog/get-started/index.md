@@ -84,12 +84,12 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
   <div style="width: 48%;">
-    <h3>momo</h3>
-    <p>生于1990年，现35岁</p>
+    <h3>主人也就是本人</h3>
+    <p>生于2004年</p>
   </div>
   <div style="width: 48%;">
-    <h3>张一鸣</h3>
-    <p>生于1983年，现42岁</p>
+    <h3>小狗</h3>
+    <p>生于2005年</p>
   </div>
 </div>
 
@@ -97,25 +97,19 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
   <!-- 时间轴条目 -->
   <div style="position: relative; margin-bottom: 30px;">
     <div style="position: absolute; left: -25px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: #ccc;"></div>
-    <h4>1983-04</h4>
-    <p>张一鸣出生于福建省龙岩市永定区，是客家人。</p>
+    <h4>2023-09</h4>
+    <p>入学并在实验课上第一次见面</p>
   </div>
 
   <div style="position: relative; margin-bottom: 30px;">
     <div style="position: absolute; left: -25px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: #ccc;"></div>
-    <h4>1990-01-01</h4>
-    <p>momo出生</p>
+    <h4>2024-10-17</h4>
+    <p>半恋爱关系</p>
   </div>
 
   <div style="position: relative; margin-bottom: 30px;">
     <div style="position: absolute; left: -25px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: #ccc;"></div>
-    <h4>2001</h4>
-    <p>张一鸣考入南开大学微电子和软件工程专业。</p>
-  </div>
-
-  <div style="position: relative; margin-bottom: 30px;">
-    <div style="position: absolute; left: -25px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: #ccc;"></div>
-    <h4>2012-03-14</h4>
-    <p>momo加入科大讯飞</p>
+    <h4>2024-12</h4>
+    <p>此狗终于爱上我</p>
   </div>
 </div>
