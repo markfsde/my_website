@@ -80,25 +80,23 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
 [Choose a stunning **theme** and **font**](https://docs.hugoblox.com/getting-started/customize/) for your site. Themes are fully customizable.
 
 ## Time
-<section class="overflow-x-auto py-12">
-  <div class="flex space-x-12 items-start relative px-6">
-    <!-- 横向中轴线 -->
-    <div class="absolute top-6 left-0 right-0 h-1 bg-gray-300 z-0"></div>
 
-    <!-- 时间点 1 -->
-    <div class="flex flex-col items-center z-10 min-w-[140px]">
-      <div class="bg-black text-white text-xs rounded-full px-3 py-1 mb-2">0岁</div>
-      <div class="text-center font-bold">出生</div>
-      <div class="text-sm text-gray-500">1990-01-01</div>
-    </div>
 
-    <!-- 时间点 2 -->
-    <div class="flex flex-col items-center z-10 min-w-[140px]">
-      <div class="bg-black text-white text-xs rounded-full px-3 py-1 mb-2">18岁</div>
-      <div class="text-center font-bold">考入安徽大学</div>
-      <div class="text-sm text-gray-500">2008-03-14</div>
-    </div>
-
-    <!-- 继续添加... -->
+<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+  <div style="width: 48%;">
+    <h3>momo</h3>
+    <p>生于1990年，现35岁</p>
   </div>
-</section>
+  <div style="width: 48%;">
+    <h3>张一鸣</h3>
+    <p>生于1983年，现42岁</p>
+  </div>
+</div>
+
+<div style="border-left: 2px solid #ccc; padding-left: 20px; margin-left: 10px;">
+  <!-- 时间轴条目 -->
+  <div style="position: relative; margin-bottom: 30px;">
+    <div style="position: absolute; left: -25px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: #ccc;"></div>
+    <h4>1983-04</h4>
+    <p>张一鸣出生于福建省龙岩市永定区，是客家人。</p>
+  </div>
