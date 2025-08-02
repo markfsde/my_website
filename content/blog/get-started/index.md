@@ -80,47 +80,38 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
 [Choose a stunning **theme** and **font**](https://docs.hugoblox.com/getting-started/customize/) for your site. Themes are fully customizable.
 
 ## Time
-<section class="relative my-20 py-20">
-  <!-- ✅ 改为固定高度撑开线条 -->
-  <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-gray-300" style="height: 100%; min-height: 1000px;"></div>
+<section class="overflow-x-auto py-12">
+  <div class="flex space-x-12 items-start relative px-6">
+    <!-- 横向中轴线 -->
+    <div class="absolute top-6 left-0 right-0 h-1 bg-gray-300 z-0"></div>
 
-  <!-- 时间点 1 -->
-  <div class="flex items-center justify-between w-full mb-16">
-    <div class="w-5/12 text-right pr-6">
-      <h3 class="text-xl font-bold">出生</h3>
-      <p class="text-sm text-gray-500">1990-01-01</p>
+    <!-- 时间点 1 -->
+    <div class="flex flex-col items-center z-10 min-w-[140px]">
+      <div class="bg-black text-white text-xs rounded-full px-3 py-1 mb-2">0岁</div>
+      <div class="text-center font-bold">出生</div>
+      <div class="text-sm text-gray-500">1990-01-01</div>
     </div>
-    <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">0岁</div>
-    <div class="w-5/12"></div>
-  </div>
 
-  <!-- 时间点 2 -->
-  <div class="flex items-center justify-between w-full mb-16">
-    <div class="w-5/12"></div>
-    <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">18岁</div>
-    <div class="w-5/12 pl-6">
-      <h3 class="text-xl font-bold">考入安徽大学</h3>
-      <p class="text-sm text-gray-500">2008-03-14</p>
+    <!-- 时间点 2 -->
+    <div class="flex flex-col items-center z-10 min-w-[140px]">
+      <div class="bg-black text-white text-xs rounded-full px-3 py-1 mb-2">18岁</div>
+      <div class="text-center font-bold">考入安徽大学</div>
+      <div class="text-sm text-gray-500">2008-03-14</div>
     </div>
-  </div>
 
-  <!-- 时间点 3 -->
-  <div class="flex items-center justify-between w-full mb-16">
-    <div class="w-5/12 text-right pr-6">
-      <h3 class="text-xl font-bold">加入科大讯飞</h3>
-      <p class="text-sm text-gray-500">2012-03-14</p>
+    <!-- 时间点 3 -->
+    <div class="flex flex-col items-center z-10 min-w-[140px]">
+      <div class="bg-black text-white text-xs rounded-full px-3 py-1 mb-2">22岁</div>
+      <div class="text-center font-bold">加入科大讯飞</div>
+      <div class="text-sm text-gray-500">2012-03-14</div>
     </div>
-    <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">22岁</div>
-    <div class="w-5/12"></div>
-  </div>
 
-  <!-- 时间点 4 -->
-  <div class="flex items-center justify-between w-full mb-16">
-    <div class="w-5/12"></div>
-    <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">24岁</div>
-    <div class="w-5/12 pl-6">
-      <h3 class="text-xl font-bold">加入字节跳动</h3>
-      <p class="text-sm text-gray-500">2014-03-14</p>
+    <!-- 时间点 4 -->
+    <div class="flex flex-col items-center z-10 min-w-[140px]">
+      <div class="bg-black text-white text-xs rounded-full px-3 py-1 mb-2">24岁</div>
+      <div class="text-center font-bold">加入字节跳动</div>
+      <div class="text-sm text-gray-500">2014-03-14</div>
     </div>
   </div>
 </section>
+
