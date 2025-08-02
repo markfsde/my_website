@@ -3,7 +3,7 @@
 title: zyy
 
 # Name pronunciation (optional)
-name_pronunciation: 珠小姐
+name_pronunciation: 𓆜𓆞𓆝𓆟𓆡
 
 # Full name (for SEO)
 first_name: yy
@@ -54,6 +54,8 @@ highlight_name: true
 website: ""
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include
-distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops
-self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+ZYY is a student of ECE at the Zhejiang University-UIUC Institute. Her research interests include ....well，she hasn't figured out her interests yet, but she still need to keep coding. Her current goal is to survive the next term. She’s interested in many things, though she only delves into each briefly.
+
+isfp｜155cm｜100kg
+🇨🇳国籍｜超极懒人
+喜欢吃｜想养狗｜0学术成就｜开心最重要👍🏻🤜🏻🤘🏻👏🏻
