@@ -82,7 +82,7 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
 ## Time
 <section class="relative my-12">
   <!-- 中间时间线 -->
-  <div class="border-l-4 border-gray-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+  <div class="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-1 bg-gray-300"></div>
 
   <!-- 时间点：出生 -->
   <div class="mb-12 flex justify-between items-center w-full">
