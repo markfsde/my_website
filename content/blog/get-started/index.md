@@ -87,6 +87,12 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
     <h3>主人也就是本人</h3>
     <p>生于2004年</p>
   </div>
+  
+  <!-- 动态爱心容器 -->
+  <div id="heartContainer" style="width: 4%; display: flex; justify-content: center;">
+    <canvas id="heartCanvas" width="40" height="40" style="border: none;"></canvas>
+  </div>
+
   <div style="width: 48%;">
     <h3>小狗</h3>
     <p>生于2005年</p>
@@ -113,3 +119,55 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
     <p>此狗终于爱上我</p>
   </div>
 </div>
+
+<script>
+// 爱心动画脚本
+document.addEventListener('DOMContentLoaded', function() {
+  const canvas = document.getElementById('heartCanvas');
+  const ctx = canvas.getContext('2d');
+  
+  let scale = 1;
+  let growing = false;
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  
+  function drawHeart() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // 设置爱心颜色
+    ctx.fillStyle = '#ff4d6d';
+    ctx.strokeStyle = '#c9184a';
+    ctx.lineWidth = 1;
+    
+    ctx.beginPath();
+
+    // 使用参数方程绘制爱心
+    for (let angle = 0; angle < Math.PI * 2; angle += 0.01) {
+      const x = 16 * Math.pow(Math.sin(angle), 3);
+      const y = -(13 * Math.cos(angle) - 5 * Math.cos(2*angle) - 2 * Math.cos(3*angle) - Math.cos(4*angle));
+      
+      ctx.lineTo(
+        centerX + x * scale * 0.2,  // 缩小比例适应canvas大小
+        centerY + y * scale * 0.2
+      );
+    }
+    
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+    
+    // 添加动画效果
+    if (growing) {
+      scale += 0.02;
+      if (scale >= 1.3) growing = false;
+    } else {
+      scale -= 0.02;
+      if (scale <= 0.7) growing = true;
+    }
+    
+    requestAnimationFrame(drawHeart);
+  }
+  
+  drawHeart();
+});
+</script>
