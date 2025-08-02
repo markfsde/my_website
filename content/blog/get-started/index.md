@@ -39,17 +39,11 @@ Welcome 👋
 - 💡 [Request a **feature** or report a **bug** for _Hugo Blox_](https://github.com/HugoBlox/hugo-blox-builder/issues)
 - ⬆️ **Updating Hugo Blox?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
 
-## Crowd-funded open-source software
-
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
 
 ### [❤️ Click here to become a sponsor and help support Hugo Blox's future ❤️](https://hugoblox.com/sponsor/)
 
 As a token of appreciation for sponsoring, you can **unlock [these](https://hugoblox.com/sponsor/) awesome rewards and extra features 🦄✨**
 
-## Ecosystem
-
-- **[Bibtex To Markdown](https://github.com/GetRD/academic-file-converter):** Automatically import publications from BibTeX
 
 ## Inspiration
 
@@ -89,7 +83,7 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="width: 4%; display: flex; justify-content: center;">
+  <div id="heartContainer" style="position: absolute; left: 45%; transform: translateX(-50%);">
     <canvas id="heartCanvas" width="40" height="40" style="border: none;"></canvas>
   </div>
 
