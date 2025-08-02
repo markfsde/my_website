@@ -80,11 +80,9 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
 [Choose a stunning **theme** and **font**](https://docs.hugoblox.com/getting-started/customize/) for your site. Themes are fully customizable.
 
 ## Time
-<section class="relative my-20 py-10">
-  <!-- ✅ 中轴线：必须撑满整个容器 -->
+<section class="relative my-20 py-20 min-h-[800px]">
+  <!-- ✅ 中轴线 -->
   <div class="absolute left-1/2 top-0 transform -translate-x-1/2 w-1 h-full bg-gray-300"></div>
-  <section class="relative my-20 py-20 min-h-[600px]">
-
 
   <!-- 时间点：出生 -->
   <div class="mb-12 flex justify-between items-center w-full">
@@ -96,7 +94,7 @@ Hugo Blox and its templates come with **automatic day (light) and night (dark) m
     <div class="w-5/12"></div>
   </div>
 
-  <!-- 时间点：考入大学 -->
+  <!-- 时间点：考入安徽大学 -->
   <div class="mb-12 flex justify-between items-center w-full">
     <div class="w-5/12"></div>
     <div class="bg-black text-white text-sm rounded-full px-3 py-1 z-10">18岁</div>
