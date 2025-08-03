@@ -52,7 +52,7 @@ Welcome 👋
   
   <!-- 动态爱心容器 -->
   <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start;margin-left: -20px;">
-    <canvas id="heartCanvas" width="40" height="40" style="border: none;"></canvas>
+    <canvas id="heartCanvas" width="80" height="80" style="border: none;"></canvas>
   </div>
 
   <div style="width: 35%;">
