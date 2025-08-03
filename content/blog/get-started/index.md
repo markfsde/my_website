@@ -51,8 +51,8 @@ Welcome 👋
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start; align-items: center; margin-left: 20px;">
-  <canvas id="heartCanvas" width="240" height="240" style="width: 90px; height: 90px; border: none;"></canvas>
+  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start; align-items: center; margin-left: 30px;">
+  <canvas id="heartCanvas" width="360" height="360" style="width: 135px; height: 135px; border: none;"></canvas>
   </div>
 
 
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const centerX = cssWidth / 2;
   const centerY = cssHeight / 2 + 1; // 轻微下移居中
   let t = 0;
-  const baseScale = 0.85;  // 初始缩放，适配小尺寸
+  const baseScale = 1.25;  // 初始缩放，适配小尺寸
   const amplitude = 0.15;
   const speed = 2.8;
 
