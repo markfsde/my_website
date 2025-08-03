@@ -51,9 +51,10 @@ Welcome 👋
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start;margin-left: -20px;">
-    <canvas id="heartCanvas" width="80" height="80" style="border: none;"></canvas>
+  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start; align-items: center; margin-left: -20px;">
+  <canvas id="heartCanvas" width="120" height="120" style="width: 40px; height: 40px; border: none;"></canvas>
   </div>
+
 
   <div style="width: 35%;">
     <h3>小狗</h3>
@@ -83,46 +84,37 @@ Welcome 👋
 </div>
 
 <script>
-// 爱心动画脚本（替换原始版本，保持小 canvas 形式，增强心跳平滑度与高 DPI 支持）
+// 动态爱心高清跳动动画，适配 Retina、保持容器一致
 document.addEventListener('DOMContentLoaded', function() {
   const canvas = document.getElementById('heartCanvas');
   if (!canvas || !canvas.getContext) return;
   const ctx = canvas.getContext('2d');
 
-  // 高 DPI 处理：按实际 CSS 尺寸调整内部像素，以保证在 Retina 上清晰
-  function adjustDPR() {
-    const rect = canvas.getBoundingClientRect();
-    const dpr = window.devicePixelRatio || 1;
-    canvas.width = rect.width * dpr;
-    canvas.height = rect.height * dpr;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); // 让后续绘制按 CSS 尺寸
-  }
-  window.addEventListener('resize', adjustDPR);
-  adjustDPR();
+  const cssWidth = canvas.clientWidth;
+  const cssHeight = canvas.clientHeight;
+  const dpr = window.devicePixelRatio || 1;
 
-  // 心跳参数
+  // 设置高分辨率绘图（Retina 支持）
+  canvas.width = cssWidth * dpr;
+  canvas.height = cssHeight * dpr;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  const centerX = cssWidth / 2;
+  const centerY = cssHeight / 2 + 1; // 轻微下移居中
   let t = 0;
-  const baseScale = 0.8; // 让整体在 40x40 里稍微有边距
-  const amplitude = 0.15; // 心跳幅度
-  const speed = 2.8; // 心跳速度
+  const baseScale = 0.5;  // 初始缩放，适配小尺寸
+  const amplitude = 0.15;
+  const speed = 2.8;
 
-  // 缓动心跳（立体尖峰效果）
   function heartbeatEase(time) {
     const raw = Math.sin(time);
     return baseScale + amplitude * Math.pow(raw, 3);
   }
 
-  // 画心形
   function drawHeart(currentScale) {
-    const rect = canvas.getBoundingClientRect();
-    const w = rect.width;
-    const h = rect.height;
-    const centerX = w / 2;
-    const centerY = h / 2 + 1; // 轻微下移视觉居中
+    ctx.clearRect(0, 0, cssWidth, cssHeight);
 
-    ctx.clearRect(0, 0, w, h);
-
-    // 背后微光（小范围光晕增强质感）
+    // 光晕背景
     const glowRadius = 10 * currentScale;
     const gradient = ctx.createRadialGradient(
       centerX, centerY - 2, 0,
@@ -138,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ctx.fill();
     ctx.restore();
 
-    // 心形主体
+    // 主体心形
     ctx.fillStyle = '#ff4d6d';
     ctx.strokeStyle = '#c9184a';
     ctx.lineWidth = 1;
@@ -146,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ctx.shadowBlur = 8 * currentScale;
 
     ctx.beginPath();
-    const scaleFactor = 0.2 * currentScale; // 与原来类似的缩放比例
+    const scaleFactor = 0.9 * currentScale; // 适配40x40展示效果
     for (let angle = 0; angle <= Math.PI * 2 + 0.01; angle += 0.02) {
       const x = 16 * Math.pow(Math.sin(angle), 3);
       const y = -(13 * Math.cos(angle)
@@ -176,5 +168,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   animate();
 });
-</script>
-
+</script
