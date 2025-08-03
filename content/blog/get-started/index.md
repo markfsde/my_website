@@ -83,53 +83,98 @@ Welcome 👋
 </div>
 
 <script>
-// 爱心动画脚本
+// 爱心动画脚本（替换原始版本，保持小 canvas 形式，增强心跳平滑度与高 DPI 支持）
 document.addEventListener('DOMContentLoaded', function() {
   const canvas = document.getElementById('heartCanvas');
+  if (!canvas || !canvas.getContext) return;
   const ctx = canvas.getContext('2d');
-  
-  let scale = 1;
-  let growing = false;
-  const centerX = canvas.width / 2;
-  const centerY = canvas.height / 2;
-  
-  function drawHeart() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    // 设置爱心颜色
+
+  // 高 DPI 处理：按实际 CSS 尺寸调整内部像素，以保证在 Retina 上清晰
+  function adjustDPR() {
+    const rect = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); // 让后续绘制按 CSS 尺寸
+  }
+  window.addEventListener('resize', adjustDPR);
+  adjustDPR();
+
+  // 心跳参数
+  let t = 0;
+  const baseScale = 0.8; // 让整体在 40x40 里稍微有边距
+  const amplitude = 0.15; // 心跳幅度
+  const speed = 2.8; // 心跳速度
+
+  // 缓动心跳（立体尖峰效果）
+  function heartbeatEase(time) {
+    const raw = Math.sin(time);
+    return baseScale + amplitude * Math.pow(raw, 3);
+  }
+
+  // 画心形
+  function drawHeart(currentScale) {
+    const rect = canvas.getBoundingClientRect();
+    const w = rect.width;
+    const h = rect.height;
+    const centerX = w / 2;
+    const centerY = h / 2 + 1; // 轻微下移视觉居中
+
+    ctx.clearRect(0, 0, w, h);
+
+    // 背后微光（小范围光晕增强质感）
+    const glowRadius = 10 * currentScale;
+    const gradient = ctx.createRadialGradient(
+      centerX, centerY - 2, 0,
+      centerX, centerY - 2, glowRadius
+    );
+    gradient.addColorStop(0, 'rgba(245,10,69,0.5)');
+    gradient.addColorStop(1, 'rgba(245,10,69,0)');
+
+    ctx.save();
+    ctx.fillStyle = gradient;
+    ctx.beginPath();
+    ctx.arc(centerX, centerY - 2, 25 * currentScale * 0.6, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+
+    // 心形主体
     ctx.fillStyle = '#ff4d6d';
     ctx.strokeStyle = '#c9184a';
     ctx.lineWidth = 1;
-    
-    ctx.beginPath();
+    ctx.shadowColor = 'rgba(201,24,74,0.7)';
+    ctx.shadowBlur = 8 * currentScale;
 
-    // 使用参数方程绘制爱心
-    for (let angle = 0; angle < Math.PI * 2; angle += 0.01) {
+    ctx.beginPath();
+    const scaleFactor = 0.2 * currentScale; // 与原来类似的缩放比例
+    for (let angle = 0; angle <= Math.PI * 2 + 0.01; angle += 0.02) {
       const x = 16 * Math.pow(Math.sin(angle), 3);
-      const y = -(13 * Math.cos(angle) - 5 * Math.cos(2*angle) - 2 * Math.cos(3*angle) - Math.cos(4*angle));
-      
-      ctx.lineTo(
-        centerX + x * scale * 0.2,  // 缩小比例适应canvas大小
-        centerY + y * scale * 0.2
-      );
+      const y = -(13 * Math.cos(angle)
+                - 5 * Math.cos(2 * angle)
+                - 2 * Math.cos(3 * angle)
+                - Math.cos(4 * angle));
+      const drawX = centerX + x * scaleFactor;
+      const drawY = centerY + y * scaleFactor;
+      if (angle === 0) {
+        ctx.moveTo(drawX, drawY);
+      } else {
+        ctx.lineTo(drawX, drawY);
+      }
     }
-    
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
-    
-    // 添加动画效果
-    if (growing) {
-      scale += 0.02;
-      if (scale >= 1.3) growing = false;
-    } else {
-      scale -= 0.02;
-      if (scale <= 0.7) growing = true;
-    }
-    
-    requestAnimationFrame(drawHeart);
+    ctx.shadowBlur = 0;
   }
-  
-  drawHeart();
+
+  function animate() {
+    t += 0.02 * speed;
+    const currentScale = heartbeatEase(t);
+    drawHeart(currentScale);
+    requestAnimationFrame(animate);
+  }
+
+  animate();
 });
 </script>
+
