@@ -13,7 +13,7 @@ authors:
   - Ted
 
 tags:
-  - Academic
+  - Daily Life
   - Hugo Blox
   - Markdown
 ---
@@ -26,13 +26,15 @@ Welcome 👋
 
 还没写
 
-### 留言板
+### 一起做的事
 
-还没写
+- [x] Write math example
+  - [x] Write diagram example
+- [ ] Do something else
 
 
 
-### Time
+### 恋爱编年表
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
   <div style="width: 35%;">
