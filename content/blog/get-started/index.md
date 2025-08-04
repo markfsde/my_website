@@ -43,7 +43,7 @@ Welcome 👋
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start; align-items: center; margin-left: 10px;">
+  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start; align-items: center; margin-left: 0px;">
   <canvas id="heartCanvas" width="360" height="360" style="width: 135px; height: 135px; border: none;"></canvas>
   </div>
 
