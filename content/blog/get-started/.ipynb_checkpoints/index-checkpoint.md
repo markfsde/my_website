@@ -60,8 +60,10 @@ Welcome 👋
     <div style="position: absolute; left: -25px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: #ccc;"></div>
     <h4>2023-09</h4>
     <p>入学并在实验课上第一次见面</p>
-    {{< video src="./my_video.mp4" controls="yes" >}}
-
+    <video width="480" controls>
+      <source src="./my_video.mp4" type="video/mp4">
+      您的浏览器不支持 video 标签。
+    </video>
   </div>
 
   <div style="position: relative; margin-bottom: 30px;">
