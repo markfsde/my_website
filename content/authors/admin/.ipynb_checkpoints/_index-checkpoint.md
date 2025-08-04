@@ -43,7 +43,7 @@ profiles:
   - icon: academicons/cv
     url: uploads/resume.pdf
     label: Download my resume
-  - icon: rss
+  - icon: brands/weixin
     url: https://weixin.qq.com/
     label: adding my wechat
 
@@ -54,8 +54,7 @@ highlight_name: true
 website: ""
 ---
 
-ZYY is a student of ECE at the Zhejiang University-UIUC Institute. Her research interests include ....well，she hasn't figured out her interests yet, but she still need to keep coding. Her current goal is to survive the next term. She’s interested in many things, though she only delves into each briefly.
-
+Hei people, I am a cockroach and I hate onions.
 isfp｜155cm｜100g
 🇨🇳国籍｜超极懒人
 喜欢吃｜想养狗｜0学术成就｜开心最重要👍🏻🤜🏻🤘🏻👏🏻
