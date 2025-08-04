@@ -54,7 +54,7 @@ highlight_name: true
 website: ""
 ---
 
-Hei people, I am a cockroach and I hate onions.
-isfp｜155cm｜100g
-🇨🇳国籍｜超极懒人
-喜欢吃｜想养狗｜0学术成就｜开心最重要👍🏻🤜🏻🤘🏻👏🏻
+Hei people, I am a cockroach and I hate onions.<br>
+isfp｜155cm｜100g<br>
+🇨🇳国籍｜超极懒人<br>
+喜欢吃｜想养狗｜0学术成就｜开心最重要👍🏻🤜🏻🤘🏻👏🏻<br>
