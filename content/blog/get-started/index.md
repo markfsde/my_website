@@ -38,8 +38,8 @@ Welcome 👋
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
   <div style="width: 35%;">
-    <h3 style="font-size: 16px;">主人也就是本人</h3>
-    <p style="font-size: 12px;">生于2004年</p>
+    <h3 style="font-size: 18px;">主人也就是本人</h3>
+    <p style="font-size: 15px;">生于2004年</p>
   </div>
   
   <!-- 动态爱心容器 -->
@@ -49,8 +49,8 @@ Welcome 👋
 
 
   <div style="width: 35%;">
-    <h3 style="font-size: 16px;">小狗</h3>
-    <p style="font-size: 12px;">生于2005年</p>
+    <h3 style="font-size: 18px;">小狗</h3>
+    <p style="font-size: 15px;">生于2005年</p>
   </div>
 </div>
 
