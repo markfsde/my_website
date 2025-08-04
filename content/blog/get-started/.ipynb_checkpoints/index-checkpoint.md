@@ -26,7 +26,7 @@ Welcome 👋
 
 还没写
 
-### 一起做的事
+### 恋爱挑战🔎
 
 - [x] Write math example
   - [x] Write diagram example
@@ -34,7 +34,7 @@ Welcome 👋
 
 
 
-### 恋爱编年表
+### 点点滴滴🐾
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
   <div style="width: 35%;">
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 
-### 在一起第？天了
+### 纪念日📆
 <style>
   .day-counter-calendar {
     width: 400px;
@@ -217,3 +217,51 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("today-date").innerText = `${today.getFullYear()}年${today.getMonth()+1}月${today.getDate()}日`;
   document.getElementById("days-count").innerText = `第 ${diffDays} 天`;
 </script>
+
+
+
+
+### 💞之相册
+<style>
+  .photo-scroller {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 12px;
+    background: #fefafe;
+    scroll-snap-type: x mandatory;
+  }
+
+  .photo-scroller::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .photo-scroller::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+
+  .photo-scroller img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+
+  .photo-scroller img:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+<div class="photo-scroller">
+  <img src="./img1.jpg" alt="照片1" />
+  <img src="./img2.jpg" alt="照片2" />
+  <img src="./img3.jpg" alt="照片3" />
+  
+  <!-- 继续添加更多照片 -->
+</div>
