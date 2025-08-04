@@ -36,7 +36,7 @@ Welcome 👋
 
 ### 点点滴滴🐾
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+<div style="display: flex; justify-content: center; gap: 60px; margin-bottom: 20px;">
   <div style="width: 40%;">
     <h3 style="font-size: 18px;">主人也就是本人</h3>
     <p style="font-size: 15px;">生于2004年</p>
