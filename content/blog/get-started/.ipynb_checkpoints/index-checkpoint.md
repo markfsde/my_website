@@ -37,18 +37,18 @@ Welcome 👋
 ### 点点滴滴🐾
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <div style="width: 35%;">
+  <div style="width: 20%;">
     <h3>主人也就是本人</h3>
     <p>生于2004年</p>
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start; align-items: center; margin-left: 30px;">
+  <div id="heartContainer" style="width: 40%; display: flex; justify-content: flex-start; align-items: center; margin-left: 30px;">
   <canvas id="heartCanvas" width="360" height="360" style="width: 135px; height: 135px; border: none;"></canvas>
   </div>
 
 
-  <div style="width: 35%;">
+  <div style="width: 20%;">
     <h3>小狗</h3>
     <p>生于2005年</p>
   </div>
@@ -223,45 +223,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### 💞之相册
 <style>
-  .photo-scroller {
-    display: flex;
+  .scroll-gallery-container {
+    width: 720px; /* 显示 3 张图片：3 x 240px */
     overflow-x: auto;
-    gap: 12px;
-    padding: 10px;
     border-radius: 12px;
-    background: #fefafe;
+    border: 2px solid #d6aefc;
+    background: #fffafc;
+    padding: 10px;
     scroll-snap-type: x mandatory;
+    white-space: nowrap;
   }
 
-  .photo-scroller::-webkit-scrollbar {
+  .scroll-gallery-container::-webkit-scrollbar {
     height: 8px;
   }
 
-  .photo-scroller::-webkit-scrollbar-thumb {
-    background: #ccc;
+  .scroll-gallery-container::-webkit-scrollbar-thumb {
+    background: #aaa;
     border-radius: 4px;
   }
 
-  .photo-scroller img {
+  .scroll-gallery-container img {
     width: 220px;
     height: 140px;
+    margin-right: 12px;
     object-fit: cover;
     border-radius: 8px;
+    display: inline-block;
     scroll-snap-align: start;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
 
-  .photo-scroller img:hover {
+  .scroll-gallery-container img:hover {
     transform: scale(1.05);
   }
 </style>
 
-<div class="photo-scroller">
-  <img src="./img1.jpg" alt="照片1" />
-  <img src="./img2.jpg" alt="照片2" />
-  <img src="./img3.jpg" alt="照片3" />
-  <img src="./img4.jpg" alt="照片4" />
-  <!-- 继续添加更多照片 -->
+<div class="scroll-gallery-container">
+  <img src="./pictures/img1.jpg" alt="照片1" />
+  <img src="./pictures/img2.jpg" alt="照片2" />
+  <img src="./pictures/img3.jpg" alt="照片3" />
+  <img src="./pictures/img4.jpg" alt="照片4" />
+  <img src="./pictures/img5.jpg" alt="照片5" />
 </div>

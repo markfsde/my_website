@@ -37,18 +37,18 @@ Welcome 👋
 ### 点点滴滴🐾
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <div style="width: 35%;">
+  <div style="width: 20%;">
     <h3>主人也就是本人</h3>
     <p>生于2004年</p>
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start; align-items: center; margin-left: 30px;">
+  <div id="heartContainer" style="width: 40%; display: flex; justify-content: flex-start; align-items: center; margin-left: 30px;">
   <canvas id="heartCanvas" width="360" height="360" style="width: 135px; height: 135px; border: none;"></canvas>
   </div>
 
 
-  <div style="width: 35%;">
+  <div style="width: 20%;">
     <h3>小狗</h3>
     <p>生于2005年</p>
   </div>
@@ -262,9 +262,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </style>
 
 <div class="scroll-gallery-container">
-  <img src="./img1.jpg" alt="照片1" />
-  <img src="./img2.jpg" alt="照片2" />
-  <img src="./img3.jpg" alt="照片3" />
-  <img src="./img4.jpg" alt="照片4" />
-  <img src="./img5.jpg" alt="照片5" />
+  <img src="./pictures/img1.jpg" alt="照片1" />
+  <img src="./pictures/img2.jpg" alt="照片2" />
+  <img src="./pictures/img3.jpg" alt="照片3" />
+  <img src="./pictures/img4.jpg" alt="照片4" />
+  <img src="./pictures/img5.jpg" alt="照片5" />
 </div>
