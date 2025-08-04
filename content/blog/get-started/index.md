@@ -37,18 +37,18 @@ Welcome 👋
 ### 点点滴滴🐾
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-    <div style="width: 40%;">
+    <div style="width: 35%;">
     <h3 style="font-size: 18px;">主人也就是本人</h3>
     <p style="font-size: 15px;">生于2004年</p>
   </div>
   
   <!-- 动态爱心容器 -->
-  <div id="heartContainer" style="width: 20%; display: flex; justify-content: flex-start; align-items: center; margin-left: -20px;">
+  <div id="heartContainer" style="width: 30%; display: flex; justify-content: flex-start; align-items: center; margin-left: -80px;">
   <canvas id="heartCanvas" width="360" height="360" style="width: 135px; height: 135px; border: none;"></canvas>
   </div>
 
 
-  <div style="width: 40%;">
+  <div style="width: 35%;">
     <h3 style="font-size: 18px;">小狗</h3>
     <p style="font-size: 15px;">生于2005年</p>
   </div>
