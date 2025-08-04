@@ -43,7 +43,7 @@ profiles:
   - icon: academicons/cv
     url: uploads/resume.pdf
     label: Download my resume
-  - icon: assets/media/icons/wechat.svg
+  - icon: rss
     url: https://weixin.qq.com/
     label: adding my wechat
 
