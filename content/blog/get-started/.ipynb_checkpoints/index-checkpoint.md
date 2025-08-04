@@ -262,6 +262,6 @@ document.addEventListener('DOMContentLoaded', function() {
   <img src="./img1.jpg" alt="照片1" />
   <img src="./img2.jpg" alt="照片2" />
   <img src="./img3.jpg" alt="照片3" />
-  
+  <img src="./img4.jpg" alt="照片4" />
   <!-- 继续添加更多照片 -->
 </div>
