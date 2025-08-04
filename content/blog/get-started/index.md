@@ -166,10 +166,10 @@ document.addEventListener('DOMContentLoaded', function() {
 ### 在一起第？天了
 <style>
   .day-counter-calendar {
-    width: 280px;
+    width: 400px;
     border: 4px solid #d6aefc; /* 边框粗细 + 淡紫色 */
     border-radius: 16px;
-    padding: 16px;
+    padding: 32px;
     text-align: center;
     font-family: sans-serif;
     background-image: url('./bg.jpg'); /* ✅ 替换为你的照片链接 */
