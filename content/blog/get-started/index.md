@@ -167,28 +167,37 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
   .day-counter-calendar {
     width: 280px;
-    border: 2px solid #f88;
-    border-radius: 12px;
+    border: 4px solid #d6aefc; /* 边框粗细 + 淡紫色 */
+    border-radius: 16px;
     padding: 16px;
     text-align: center;
     font-family: sans-serif;
-    background: #fff5f5;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-image: url('./bg.jpg'); /* ✅ 替换为你的照片链接 */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    color: #fff;
+    backdrop-filter: brightness(1.1) blur(2px);
   }
+
   .day-counter-calendar h2 {
     margin: 0;
     font-size: 1.5em;
-    color: #d33;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
   }
+
   .day-counter-calendar .date {
     font-size: 1.2em;
     margin: 8px 0;
-    color: #444;
+    color: #f0f0f0;
   }
+
   .day-counter-calendar .days {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-weight: bold;
-    color: #e60000;
+    color: #ff4444;
+    text-shadow: 1px 1px 2px white;
   }
 </style>
 
@@ -199,10 +208,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <script>
-  const startDate = new Date("2025-04-27"); // 起始日期：你们在一起的第一天
+  const startDate = new Date("2025-04-27"); // 改为你的纪念日
   const now = new Date();
-
-  // 只保留年月日
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const diffTime = today - startDate;
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
