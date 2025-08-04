@@ -43,7 +43,7 @@ profiles:
   - icon: academicons/cv
     url: uploads/resume.pdf
     label: Download my resume
-  - icon: brands/wechat
+  - icon: https://https://markfsde.github.io/my_website/assets/media/icons/wechat.svg
     url: https://weixin.qq.com/
     label: adding my wechat
 
