@@ -160,4 +160,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
   animate();
 });
-</script
+</script>
+
+
+### 在一起第？天了
+<style>
+  .day-counter-calendar {
+    width: 280px;
+    border: 2px solid #f88;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    font-family: sans-serif;
+    background: #fff5f5;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .day-counter-calendar h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #d33;
+  }
+  .day-counter-calendar .date {
+    font-size: 1.2em;
+    margin: 8px 0;
+    color: #444;
+  }
+  .day-counter-calendar .days {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #e60000;
+  }
+</style>
+
+<div class="day-counter-calendar">
+  <h2>我们在一起</h2>
+  <div class="date" id="today-date">加载中…</div>
+  <div class="days" id="days-count">第 0 天</div>
+</div>
+
+<script>
+  const startDate = new Date("2025-04-27"); // 起始日期：你们在一起的第一天
+  const now = new Date();
+
+  // 只保留年月日
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const diffTime = today - startDate;
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
+
+  document.getElementById("today-date").innerText = `${today.getFullYear()}年${today.getMonth()+1}月${today.getDate()}日`;
+  document.getElementById("days-count").innerText = `第 ${diffDays} 天`;
+</script>
