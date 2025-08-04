@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
   .day-counter-calendar .days {
     font-size: 2.5em;
     font-weight: bold;
-    color: #ff4444;
+    color: #d6aefc;
     text-shadow: 1px 1px 2px white;
   }
 </style>
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <script>
-  const startDate = new Date("2025-04-27"); // 改为你的纪念日
+  const startDate = new Date("2024-10-17"); // 改为你的纪念日
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const diffTime = today - startDate;
