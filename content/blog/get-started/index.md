@@ -11,11 +11,6 @@ image:
 authors:
   - me
   - Ted
-
-tags:
-  - Academic
-  - Hugo Blox
-  - Markdown
 ---
 
 Welcome 👋
