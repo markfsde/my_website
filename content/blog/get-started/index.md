@@ -1,7 +1,7 @@
 ---
-title: 🎉 Easily create your own simple yet highly customizable blog
-summary: Take full control of your personal brand and privacy by migrating away from the big tech platforms!
-date: 2023-10-27
+title: vibe coding项目：银发守护者
+summary: 灵感来源于腾讯云黑客松的小红花赛道，项目的创意，玩法与概念设计均由本人完成，代码由claude code辅助完成，视频由gemini生成
+date: 2026-06-09
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
@@ -10,72 +10,40 @@ image:
 
 authors:
   - me
-  - Ted
+ 
 ---
 
-Welcome 👋
 
 {{< toc mobile_only=true is_open=true >}}
 
-## Overview
-
-1. The Hugo Blox website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site
-2. The template can be modified and customised to suit your needs. It's a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a **no-code solution (write in Markdown and customize with YAML parameters)** and having **flexibility to later add even deeper personalization with HTML and CSS**
-3. You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more
-
-[//]: # '[![The template is mobile first with a responsive design to ensure that your site looks stunning on every device.](https://raw.githubusercontent.com/HugoBlox/kit/main/templates/academic-cv/preview.png)](https://hugoblox.com)'
-
-### Get Started
-
-- 👉 [**Create a new site**](https://hugoblox.com/templates/)
-- 📚 [**Personalize your site**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GoOwnable](https://x.com/GoOwnable)  #MadeWithHugoBlox
-- 💡 [Request a **feature** or report a **bug** for _Hugo Blox_](https://github.com/HugoBlox/kit/issues)
-- ⬆️ **Updating Hugo Blox?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/kit/releases)
-
-## Crowd-funded open-source software
-
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
-
-### [❤️ Click here to become a sponsor and help support Hugo Blox's future ❤️](https://hugoblox.com/sponsor/)
-
-As a token of appreciation for sponsoring, you can **unlock [these](https://hugoblox.com/sponsor/) awesome rewards and extra features 🦄✨**
-
-## Ecosystem
-
-- **[Bibtex To Markdown](https://github.com/GetRD/academic-file-converter):** Automatically import publications from BibTeX
-
-## Inspiration
-
-[Learn what other **creators**](https://hugoblox.com/creators/) are building with this template.
-
-## Features
-
-- **Page builder** - Create _anything_ with no-code [**blocks**](https://hugoblox.com/blocks/) and [**elements**](https://docs.hugoblox.com/reference/markdown/)
-- **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
-- **Create content** in [**Markdown**](https://docs.hugoblox.com/reference/markdown/), [**Jupyter**](https://docs.hugoblox.com/getting-started/cms/), or [**RStudio**](https://docs.hugoblox.com/getting-started/cms/)
-- **Plugin System** - Fully customizable [**color** and **font themes**](https://docs.hugoblox.com/getting-started/customize/)
-- **Display Code and Math** - Code syntax highlighting and LaTeX math supported
-- **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
-- **Beautiful Site** - Simple and refreshing one-page design
-- **Industry-Leading SEO** - Help get your website found on search engines and social media
-- **Media Galleries** - Display your images and videos with captions in a customizable gallery
-- **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
-- **Multi-language** - 35+ language packs including English, 中文, and Português
-- **Multi-user** - Each author gets their own profile page
-- **Privacy Pack** - Assists with GDPR
-- **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
-- **One-Click Deployment** - No servers. No databases. Only files.
-
-## Themes
-
-Hugo Blo and its templates come with **automatic day (light) and night (dark) mode** built-in. Visitors can choose their preferred mode by clicking the sun/moon icon in the header.
-
-[Choose a stunning **theme** and **font**](https://docs.hugoblox.com/getting-started/customize/) for your site. Themes are fully customizable.
-
-## License
+## 作品简介
 
 
+1. 游戏简介
+这是一款关于陪伴与关爱老人的游戏。玩家扮演在外地求学或工作的晚辈，用8周时间通过远程布置任务和周末回家陪伴，帮助独居的爷爷/奶奶跨越"数字鸿沟"——学会手机购物、识破电信诈骗、融入社区生活。游戏以数字生存力、健康幸福感、社交活跃度三项属性为核心，结合防诈骗问答、食材搭配、广场舞节奏等五种互动小游戏，有三种不同结局等待解锁。改游戏旨在通过轻松的玩法引发年轻人对老年群体的关爱。
 
-Released under the [MIT](https://github.com/HugoBlox/kit/blob/main/LICENSE.md) license.
+2. AI辅助创作说明
+概要：本项目在创作过程中使用了多模态AI工具，实现从概念到项目落地的全过程。
+
+代码实现：Claude（本地Agentic模式）
+代码部分采用 Anthropic Claude在本地以对话式编程方式完成。具体流程是：在本地终端通过Claude进行实时代码生成与调试，覆盖游戏逻辑、状态管理、UI组件、CSS动画系统及 Web Audio API音乐引擎等模块。每次迭代完成后，通过 Git进行版本管理并推送至GitHub，最终借助GitHub Pages完成零成本静态部署。
+
+开场动画：Google Gemini
+开场像素风动画由Gemini的视频生成能力完成。作者提供了场景描述提示词，由Gemini生成入场视频，再由作者筛选、集成至游戏入口场景。
+
+设计原因：
+这套工作流本质上是一种人机协作的分层创作模式：游戏的核心创意、叙事框架与玩法机制设计均源于作者本人的独立构思。而代码与视觉效果均由AI辅助完成，并用github实现了版本管理与网页部署。
+
+### demo视频
+
+![](0.jpg)
+![](1.jpg)
+![](2.jpg)
+![](3.jpg)
+![](4.jpg)
+
+## 游戏链接
+
+https://markfsde.github.io/elderly_care_game/
+
+
