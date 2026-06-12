@@ -1,132 +1,31 @@
 ---
-title: 🧠 Sharpen your thinking with a second brain
-summary: Create a personal knowledge base and share your knowledge with your peers.
-date: 2023-10-26
+title:  AI简历生成器
+summary: 面向招聘机构、高校及培训平台的B2B SaaS解决方案。支持企业自带API密钥，轻松掌控成本与品牌自主权。
+date: 2026-06-11
 authors:
   - me
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
 
-Create a personal knowledge base and share your knowledge with your peers.
+### 体验网址
 
-Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.
+https://markfsde.github.io/resume_project/
 
-Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.
+### 效果展示
 
-Use it as your second brain, either publicly sharing your knowledge with your peers via your website, or via a private GitHub repository and password-protected site just for yourself.
+![demo](demo.png)
 
-## Mindmaps
 
-Hugo Blox supports a Markdown extension for mindmaps.
+### 产品概念
 
-With this open format, can even edit your mindmaps in other popular tools such as Obsidian.
+🏢 企业端：低门槛、可掌控的 AI 解决方案
+自带API架构： 企业客户自主填入 DeepSeek/OpenAI 密钥，将大模型成本降至最低。
 
-Simply insert a Markdown code block labelled as `markmap` and optionally set the height of the mindmap as shown in the example below.
+快速品牌华：零代码快速更换品牌视觉，让企业在数分钟内拥有专属的、面向用户的 AI 智能应用。
 
-Mindmaps can be created by simply writing the items as a Markdown list within the `markmap` code block, indenting each item to create as many sub-levels as you need:
 
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - netlify
-  - netlify-cms
-  - slides
-```
-</code>
-</pre>
-</div>
+🧑‍💻 用户端：对新人极度友好的简历工坊
+简易的信息表单：抛弃复杂的Prompt编写，通过高交互性的引导式表单，帮助职场新人梳理核心经历。
 
-renders as
-
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - netlify
-  - netlify-cms
-  - slides
-```
-
-Anh here's a more advanced mindmap with formatting, code blocks, and math:
-
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap
-- Mindmaps
-  - Links
-    - [Hugo Blox Docs](https://docs.hugoblox.com/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/kit)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
-    -
-      ```js
-      console.log('hello');
-      console.log('code block');
-      ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-```
-</code>
-</pre>
-</div>
-
-renders as
-
-```markmap
-- Mindmaps
-  - Links
-    - [Hugo Blox Docs](https://docs.hugoblox.com/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/kit)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
-    -
-      ```js
-      console.log('hello');
-      console.log('code block');
-      ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-```
-
-## Highlighting
-
-<mark>Highlight</mark> important text with `mark`:
-
-```html
-<mark>Highlighted text</mark>
-```
-
-## Callouts
-
-Use [callouts](https://docs.hugoblox.com/reference/markdown/#callouts) (aka _asides_, _hints_, or _alerts_) to draw attention to notes, tips, and warnings.
-
-Use the `> [!NOTE]` syntax to create a callout.
-
-```markdown
-> [!NOTE]
-> A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-```
-
-renders as
-
-> [!NOTE]
-> A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-
-Or use the `warning` callout type so your readers don't miss critical details:
-
-> [!WARNING]
-> A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-
-## Did you find this page helpful? Consider sharing it 🙌
+智能润色与即时交付：一键调用后台高规格AI引擎，对弱口语化表达进行专业级重塑，提供高保真PDF预览与一键下载。
