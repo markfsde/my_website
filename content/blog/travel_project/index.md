@@ -15,11 +15,13 @@ https://markfsde.github.io/travel_records/
 
 ### 效果展示
 
-![1](1.png)
+### 效果展示
 
-![2](2.png)
-
-![3](3.png)
+{{< slider >}}
+![](1.png)
+![](2.png)
+![](3.png)
+{{< /slider >}}
 
 
 ### 项目功能说明

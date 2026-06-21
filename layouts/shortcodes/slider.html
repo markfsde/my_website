@@ -1,0 +1,43 @@
+<div class="custom-slider-container">
+  <div class="custom-slider">
+    {{ .Inner }}
+  </div>
+</div>
+
+<style>
+.custom-slider-container {
+  width: 100%;
+  max-width: 800px; /* 你可以调整最大宽度 */
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.custom-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 隐藏滚动条 */
+.custom-slider::-webkit-scrollbar {
+  display: none;
+}
+.custom-slider {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+/* 统一图片大小的核心 CSS */
+.custom-slider img, .custom-slider p {
+  margin: 0 !important; /* 消除 Hugo 默认段落边距 */
+  flex: 0 0 100%;
+  width: 100%;
+  height: 450px; /* 在这里统一高度，可以根据需要修改 */
+  object-fit: cover; /* 保证图片不变形且填满容器 */
+  scroll-snap-align: start;
+}
+</style>
