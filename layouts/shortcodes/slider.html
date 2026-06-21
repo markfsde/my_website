@@ -12,12 +12,14 @@
 <style>
 .custom-slider-container {
   width: 100%;
-  max-width: 850px; /* 稍微加宽一点，配合你的宽屏截图 */
+  max-width: 850px;
   margin: 0 auto 1.5rem;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  background-color: #0b111e; /* 使用和你截图一致的暗色背景，让局部图完美融入 */
+  background-color: #0b111e;
+  display: flex;
+  flex-direction: column; /* 让滑块区域贴在最下方 */
 }
 
 .custom-slider {
@@ -26,34 +28,59 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px; /* 给下方滚动条留出一点呼吸空间 */
 }
 
+/* ── 核心：美化并显示最下方的滚动条 ── */
+/* 1. 定义滚动条的整体高度和背景（轨道） */
 .custom-slider::-webkit-scrollbar {
-  display: none;
+  display: block; /* 恢复显示滚动条 */
+  height: 6px;    /* 保持细长精致，不破坏美观 */
 }
+
 .custom-slider {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+  -ms-overflow-style: auto;  
+  scrollbar-width: thin;  /* 火狐浏览器下变细 */
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.05);
+}
+
+/* 2. 滚动条轨道（底色） */
+.custom-slider::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); 
+  margin: 0 40px; /* 让滚动条两边缩进一点，看起来更像组件而不是浏览器自带的 */
+  border-radius: 10px;
+}
+
+/* 3. 滚动的滑块（提示读者可以拖拽/滑动的部分） */
+.custom-slider::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3); /* 亮色半透明滑块，在暗色背景下非常显眼 */
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+/* 4. 鼠标悬停在滑块上时加深颜色 */
+.custom-slider::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 191, 255, 0.6); /* 甚至可以换成你地球上那种青蓝色，更具整体感 */
 }
 
 /* 每一个滑动页面的容器 */
 .slider-item {
   flex: 0 0 100%;
   width: 100%;
-  height: 500px; /* 统一滑块整体高度 */
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
 }
 
-/* 核心修复：等比例完整显示图片 */
+/* 保证图片不被裁剪 */
 .slider-item img {
   margin: 0 !important;
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain; /* 保证图片不被裁剪、完整显示 */
+  object-fit: contain;
 }
 </style>
