@@ -13,7 +13,7 @@ image:
 https://markfsde.github.io/travel_records/
 
 
-### 效果展示
+### 效果展示（可滑动）
 
 
 {{< slider "1.png,2.png,3.png" >}}
